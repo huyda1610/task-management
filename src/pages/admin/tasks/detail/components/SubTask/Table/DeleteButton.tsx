@@ -45,6 +45,7 @@ const DeleteButton = ({ id }: PropsType) => {
       icon={<ShareIcon.SolarTrashBinTrash />}
       onClick={handleDelete}
       disabled={task.data?.subTask.length === 1}
+      className="mt-0.5"
     />
   );
 };

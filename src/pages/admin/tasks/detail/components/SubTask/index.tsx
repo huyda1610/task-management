@@ -1,9 +1,8 @@
-import AntButton from "@components/Antd/Button";
 import AntCard from "@components/Antd/Card";
-import { ShareIcon } from "@components/Svg";
 import { useAppSelector } from "@stores/hook";
 import React from "react";
 import Table from "./Table";
+import CreateTaskButton from "./TaskCreateBtn";
 
 type TaskDetailSubTaskProps = { isInitLoading: boolean };
 const TaskDetailSubTask: React.FC<TaskDetailSubTaskProps> = ({ isInitLoading }) => {
@@ -14,11 +13,7 @@ const TaskDetailSubTask: React.FC<TaskDetailSubTaskProps> = ({ isInitLoading }) 
       bodyClassName="px-0"
       skeletonLoading={{ loading: isInitLoading, height: 300 }}
       loading={task.isLoading}
-      extra={
-        <AntButton type="primary" icon={<ShareIcon.SolarAddCircle className="mt-1.5" />}>
-          Tạo công việc
-        </AntButton>
-      }
+      extra={<CreateTaskButton />}
     >
       <Table />
     </AntCard>

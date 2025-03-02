@@ -40,7 +40,7 @@ export const columns = (): ColumnsType<TaskOutputDto> => {
       width: 70,
       key: "code",
       render: (_, record) => (
-        <div className="flex justify-center gap-2">
+        <div className="flex items-center gap-2">
           <AntButton type="text" shape="circle" tooltip={{ title: "Chỉnh sửa" }}>
             <ShareIcon.SolarPen className="!text-primary" width={22} height={22} />
           </AntButton>

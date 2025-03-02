@@ -1,4 +1,3 @@
-"use client";
 import { DEFAULT_PAGE_SIZE_OPTIONS } from "@core/constant";
 import { Pagination, PaginationProps } from "antd";
 

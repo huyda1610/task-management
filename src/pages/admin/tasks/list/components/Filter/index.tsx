@@ -8,7 +8,6 @@ function TasksFilter() {
   const dispatch = useAppDispatch();
   const { tasks } = useAppSelector((state) => state.tasks);
 
-  // const [data, setData] = React.useState<any>();
   const searchItems: ShareSearchItem[] = [
     {
       key: "searchKey",
@@ -24,8 +23,6 @@ function TasksFilter() {
       searchItems={searchItems}
       totalResult={tasks.data?.totalCount}
       onValuesChange={(allValues) => {
-        console.log(allValues);
-
         dispatch(
           tasksSliceThunk.fetchTasksAsync({
             ...tasks.input,

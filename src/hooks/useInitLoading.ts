@@ -1,4 +1,3 @@
-"use client";
 import { useEffect, useRef } from "react";
 
 const useInitLoading = (loading: boolean): boolean => {

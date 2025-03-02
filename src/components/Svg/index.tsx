@@ -3,6 +3,7 @@ import { SolarAddCircleSvg } from "./solar/add-circle";
 import { SolarAltArrowSvg } from "./solar/alt-arrow";
 import { SolarAltArrowDownLineSvg } from "./solar/alt-arrow-down-line";
 import { SolarBook2Svg } from "./solar/book-2";
+import { SolarChartSvg } from "./solar/chart";
 import { SolarChart2Svg } from "./solar/chart-2";
 import { SolarCheckCircleSvg } from "./solar/check-circle";
 import { SolarClipboardListSvg } from "./solar/clipboard-list";
@@ -25,4 +26,5 @@ export const ShareIcon = {
   SolarAddCircle: (props: SVGProps<SVGSVGElement>) => <SolarAddCircleSvg {...props} />,
   SolarPen: (props: SVGProps<SVGSVGElement>) => <SolarPenSvg {...props} />,
   SolarPenNewRound: (props: SVGProps<SVGSVGElement>) => <SolarPenNewRoundSvg {...props} />,
+  SolarChart: (props: SVGProps<SVGSVGElement>) => <SolarChartSvg {...props} />,
 };

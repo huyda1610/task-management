@@ -45,6 +45,8 @@ function AntRangePicker({
     switch (props.picker) {
       case "month":
         return "MM/YYYY";
+      case "year":
+        return "YYYY";
 
       default:
         return DEFAULT_DATE_FORMAT;

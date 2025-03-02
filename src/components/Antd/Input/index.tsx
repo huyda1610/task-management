@@ -1,4 +1,3 @@
-"use client";
 import { cn } from "@core/utils/cn";
 import { Input, InputProps } from "antd";
 import { formGetPlaceholder } from "../Form/utils";

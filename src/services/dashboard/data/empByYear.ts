@@ -1,0 +1,148 @@
+import { EmpByYearDto } from "../models/output.model";
+
+export const empByYearData: EmpByYearDto[] = [
+  {
+    date: "2023-03-01T00:00:00Z",
+    total: 185,
+    hired: 8,
+    departures: 3,
+  },
+  {
+    date: "2023-04-01T00:00:00Z",
+    total: 192,
+    hired: 12,
+    departures: 5,
+  },
+  {
+    date: "2023-05-01T00:00:00Z",
+    total: 198,
+    hired: 10,
+    departures: 4,
+  },
+  {
+    date: "2023-06-01T00:00:00Z",
+    total: 205,
+    hired: 14,
+    departures: 7,
+  },
+  {
+    date: "2023-07-01T00:00:00Z",
+    total: 211,
+    hired: 9,
+    departures: 3,
+  },
+  {
+    date: "2023-08-01T00:00:00Z",
+    total: 216,
+    hired: 11,
+    departures: 6,
+  },
+  {
+    date: "2023-09-01T00:00:00Z",
+    total: 223,
+    hired: 12,
+    departures: 5,
+  },
+  {
+    date: "2023-10-01T00:00:00Z",
+    total: 228,
+    hired: 8,
+    departures: 3,
+  },
+  {
+    date: "2023-11-01T00:00:00Z",
+    total: 235,
+    hired: 10,
+    departures: 3,
+  },
+  {
+    date: "2023-12-01T00:00:00Z",
+    total: 240,
+    hired: 7,
+    departures: 2,
+  },
+  {
+    date: "2024-01-01T00:00:00Z",
+    total: 247,
+    hired: 13,
+    departures: 6,
+  },
+  {
+    date: "2024-02-01T00:00:00Z",
+    total: 253,
+    hired: 12,
+    departures: 6,
+  },
+  {
+    date: "2024-03-01T00:00:00Z",
+    total: 262,
+    hired: 15,
+    departures: 6,
+  },
+  {
+    date: "2024-04-01T00:00:00Z",
+    total: 271,
+    hired: 16,
+    departures: 7,
+  },
+  {
+    date: "2024-05-01T00:00:00Z",
+    total: 280,
+    hired: 14,
+    departures: 5,
+  },
+  {
+    date: "2024-06-01T00:00:00Z",
+    total: 292,
+    hired: 18,
+    departures: 6,
+  },
+  {
+    date: "2024-07-01T00:00:00Z",
+    total: 301,
+    hired: 13,
+    departures: 4,
+  },
+  {
+    date: "2024-08-01T00:00:00Z",
+    total: 310,
+    hired: 15,
+    departures: 6,
+  },
+  {
+    date: "2024-09-01T00:00:00Z",
+    total: 320,
+    hired: 17,
+    departures: 7,
+  },
+  {
+    date: "2024-10-01T00:00:00Z",
+    total: 327,
+    hired: 12,
+    departures: 5,
+  },
+  {
+    date: "2024-11-01T00:00:00Z",
+    total: 335,
+    hired: 14,
+    departures: 6,
+  },
+  {
+    date: "2024-12-01T00:00:00Z",
+    total: 340,
+    hired: 9,
+    departures: 4,
+  },
+  {
+    date: "2025-01-01T00:00:00Z",
+    total: 352,
+    hired: 18,
+    departures: 6,
+  },
+  {
+    date: "2025-02-01T00:00:00Z",
+    total: 365,
+    hired: 20,
+    departures: 7,
+  },
+];

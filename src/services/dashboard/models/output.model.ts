@@ -3,3 +3,10 @@ export type RevenueByYearDto = {
   revenue: number;
   growth: number;
 };
+
+export type EmpByYearDto = {
+  date: string;
+  total: number;
+  hired: number;
+  departures: number;
+};

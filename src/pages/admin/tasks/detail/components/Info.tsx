@@ -43,7 +43,7 @@ const TaskDetailInfo: React.FC<TaskDetailInfoProps> = ({ isInitLoading }) => {
         loading: isInitLoading,
         height: 300,
       }}
-      className="col-span-2"
+      className="lg:col-span-2"
       extra={
         !isCanEdit && (
           <AntButton type="text" shape="circle" tooltip={{ title: "Chỉnh sửa" }} onClick={handleToggleEdit}>

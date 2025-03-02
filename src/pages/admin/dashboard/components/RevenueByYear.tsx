@@ -110,4 +110,4 @@ const RevenueByYear: React.FC = () => {
   );
 };
 
-export default RevenueByYear;
+export default React.memo(RevenueByYear);

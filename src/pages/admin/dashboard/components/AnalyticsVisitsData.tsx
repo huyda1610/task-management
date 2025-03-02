@@ -2,6 +2,7 @@ import AntCard from "@components/Antd/Card";
 import useDelay from "@hooks/useDelay";
 import ReactECharts from "echarts-for-react";
 import { EChartsOption } from "echarts-for-react/src/types";
+import React from "react";
 
 function AnalyticsVisitsData() {
   const initLoading = useDelay();
@@ -85,4 +86,4 @@ function AnalyticsVisitsData() {
   );
 }
 
-export default AnalyticsVisitsData;
+export default React.memo(AnalyticsVisitsData);

@@ -6,7 +6,6 @@ import { TasksRouter } from "./tasks/index.router";
 
 const DashboardPage = lazy(() => import("@pages/admin/dashboard"));
 const NotFoundPage = lazy(() => import("@pages/error/404"));
-const ForbiddenPage = lazy(() => import("@pages/error/403"));
 
 export const router = createBrowserRouter(
   [
@@ -25,10 +24,6 @@ export const router = createBrowserRouter(
     {
       path: "*",
       element: <NotFoundPage />,
-    },
-    {
-      path: "403",
-      element: <ForbiddenPage />,
     },
   ],
   { basename: import.meta.env.VITE_BASENAME },

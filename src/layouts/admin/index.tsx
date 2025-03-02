@@ -1,4 +1,5 @@
 import { useSidebar } from "@core/provider/sidebar-provider";
+import React from "react";
 import { Outlet } from "react-router-dom";
 import AppHeader from "./AppHeader";
 import AppSidebar from "./AppSidebar";
@@ -21,7 +22,15 @@ export default function AdminLayout() {
         <AppHeader />
         {/* Page Content */}
         <div className="mx-auto max-w-screen-2xl p-4 md:p-6">
-          <Outlet />
+          <React.Suspense
+            fallback={
+              <div className="flex min-h-[calc(100vh_-_140px)] items-center justify-center">
+                <div className="loader"></div>
+              </div>
+            }
+          >
+            <Outlet />
+          </React.Suspense>
         </div>
       </div>
     </div>

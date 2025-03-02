@@ -73,4 +73,4 @@ const EmpByMonth: React.FC = () => {
   );
 };
 
-export default EmpByMonth;
+export default React.memo(EmpByMonth);

@@ -21,4 +21,5 @@ export type EditTasksInputDto = {
   assignedTo?: string;
   endDate?: string;
   subTask?: SubTaskDto[];
+  status?: number;
 };

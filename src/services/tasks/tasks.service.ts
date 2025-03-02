@@ -114,6 +114,7 @@ async function editTask(id: string, body: EditTasksInputDto): Promise<void> {
         assignedTo: body?.assignedTo ? userData.find((user) => user.id === body.assignedTo) : task.assignedTo,
         endDate: body?.endDate ?? task.endDate,
         subTask: body?.subTask ?? task.subTask,
+        status: body?.status ?? task.status,
       };
     }
 

@@ -9,7 +9,7 @@ import { rule } from "@core/utils/form/rules";
 import { get } from "@core/utils/get";
 import { userData } from "@services/tasks/data/user";
 import { useAppSelector } from "@stores/hook";
-import { Avatar, Form, FormProps } from "antd";
+import { Avatar, Divider, Form, FormProps } from "antd";
 import React, { useEffect } from "react";
 import { useEditContact } from "../hooks/useEditTask";
 
@@ -63,6 +63,8 @@ const TaskDetailAssignedInfo: React.FC<TaskDetailAssignedInfoProps> = ({ isInitL
       </div>
 
       <ShareRenderIf ifTrue={isCanEdit}>
+        <Divider />
+
         <AntForm form={form} onFinish={onFinish} className="mt-6">
           <AntFormItem label="Người thực hiện" name="assignedTo" rules={[rule.required()]}>
             <AntSelect options={userData.map((item) => ({ value: item.id, label: item.email }))} showSearch />

@@ -1,12 +1,11 @@
-import AntButton from "@components/Antd/Button";
-import { ShareIcon } from "@components/Svg";
 import { renderTaskStatusTag } from "@enums/tasks/TaskStatusEnum.render";
-import { TaskOutputDto } from "@services/tasks/models/output.model";
+import { SubTaskDto } from "@services/tasks/models/output.model";
 import { ColumnsType } from "antd/lib/table";
 import DeleteButton from "./DeleteButton";
+import EditButton from "./EditButton";
 
-export const columns = (): ColumnsType<TaskOutputDto> => {
-  const columns: ColumnsType<TaskOutputDto> = [
+export const columns = (): ColumnsType<SubTaskDto> => {
+  const columns: ColumnsType<SubTaskDto> = [
     {
       title: "STT",
       dataIndex: "id",
@@ -41,9 +40,7 @@ export const columns = (): ColumnsType<TaskOutputDto> => {
       key: "code",
       render: (_, record) => (
         <div className="flex items-center gap-2">
-          <AntButton type="text" shape="circle" tooltip={{ title: "Chỉnh sửa" }}>
-            <ShareIcon.SolarPen className="!text-primary" width={22} height={22} />
-          </AntButton>
+          <EditButton subTask={record} />
 
           <DeleteButton id={record.id} />
         </div>

@@ -29,9 +29,9 @@ const DeleteButton = ({ id }: PropsType) => {
 
   const handleDelete = () => {
     modalConfirm.confirm({
-      onOk: async () => {
+      onOk: () => {
         // Call API to delete task
-        await deleteTask();
+        deleteTask();
       },
     });
   };

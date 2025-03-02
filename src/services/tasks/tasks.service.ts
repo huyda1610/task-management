@@ -57,7 +57,7 @@ async function getTasksInfo(): Promise<TaskInfoDto> {
 }
 
 async function deleteTaskById(id: string): Promise<void> {
-  await generate.delay(500);
+  // await generate.delay(500);
 
   const tasks = checkClientData();
 

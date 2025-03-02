@@ -31,16 +31,20 @@ const CreateDrawer: React.FC<PropsType> = ({ openDrawer, setOpenDrawer }) => {
   };
 
   const onFinish: FormProps["onFinish"] = (values) => {
+    const taskList = [
+      ...(task?.data?.subTask ?? []),
+      {
+        id: crypto.randomUUID(),
+        status: TaskStatusEnum.Todo,
+        endDate: values?.endDate,
+        title: values?.title,
+      },
+    ];
     editContact({
-      subTask: [
-        ...(task?.data?.subTask ?? []),
-        {
-          id: crypto.randomUUID(),
-          status: TaskStatusEnum.Todo,
-          endDate: values?.endDate,
-          title: values?.title,
-        },
-      ],
+      subTask: taskList,
+      status: taskList.every((item) => item.status === TaskStatusEnum.Todo)
+        ? TaskStatusEnum.Todo
+        : TaskStatusEnum.InProgress,
     });
   };
 

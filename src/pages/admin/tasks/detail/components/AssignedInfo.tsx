@@ -24,7 +24,7 @@ const TaskDetailAssignedInfo: React.FC<TaskDetailAssignedInfoProps> = ({ isInitL
   useEffect(() => {
     if (task.data)
       form.setFieldsValue({
-        ...task.data,
+        assignedTo: task.data.assignedTo?.id,
       });
   }, [task.data, form]);
 

@@ -1,0 +1,28 @@
+.search {
+  .ant-select {
+    height: 47px !important;
+    font-size: 0.875rem;
+  }
+
+  .ant-select-selector {
+    //padding: 16px 14px !important;
+  }
+
+  .ant-select-selection-item {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #919eab;
+  }
+  .ant-select-selection-search-input {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    color: #919eab !important;
+    height: 100% !important;
+  }
+
+  .ant-select-selection-placeholder {
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    color: #919eab !important;
+  }
+}

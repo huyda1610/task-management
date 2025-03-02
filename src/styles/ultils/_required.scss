@@ -1,0 +1,6 @@
+.required::after {
+  content: "*";
+  color: red;
+  margin-left: 4px;
+  @apply text-[0.875rem] font-semibold;
+}

@@ -1,0 +1,12 @@
+.ant-breadcrumb {
+  ol {
+    @apply flex flex-row items-center justify-start gap-4;
+
+    .ant-breadcrumb-separator {
+      @apply m-0;
+    }
+  }
+  a {
+    @apply text-black;
+  }
+}

@@ -1,10 +1,9 @@
 import { CloseCircleFilled } from "@ant-design/icons";
+import { ShareSearchItem, ShareSearchProps } from "@components/Search/type";
 import { Button, Tooltip } from "antd";
-import { B2BSearchItem, B2BSearchProps } from "../../type";
 import React from "react";
-import { B2BOptions } from "@core/components/Antd/type";
 
-type ResultSearchProps = B2BSearchProps & {
+type ResultSearchProps = ShareSearchProps & {
   handleRemoveFilter: (key: string, value: string | number) => void;
   handleResetFilter?: () => void;
 };
@@ -26,7 +25,7 @@ export default function ResultSearch({
     });
   }
 
-  const getResult = (data: B2BSearchItem, values: any): B2BOptions[] => {
+  const getResult = (data: ShareSearchItem, values: any): any[] => {
     switch (data?.type) {
       case "date":
         return [
@@ -80,7 +79,7 @@ export default function ResultSearch({
     return <span className="truncate px-2 text-[13px] font-medium leading-[19.5px]">{label}</span>;
   };
 
-  const isRenderResult = (data: B2BSearchItem): boolean => {
+  const isRenderResult = (data: ShareSearchItem): boolean => {
     if (!data || !values) return false;
     if (Array.isArray(values[data?.key])) return values[data?.key].length > 0;
 
@@ -90,14 +89,14 @@ export default function ResultSearch({
   return (
     <section className="flex flex-col">
       {values && checkObjectHasData(values) && (
-        <p className="text-[14px] font-normal text-textSecondary my-3">
+        <p className="text-textSecondary my-3 text-[14px] font-normal">
           Tìm thấy <strong className="text-textPrimary"> {totalResult ?? 0} </strong>kết quả
         </p>
       )}
 
       <div className="flex flex-wrap items-center justify-start gap-2">
         {searchItems.map(
-          (data: B2BSearchItem) =>
+          (data: ShareSearchItem) =>
             isRenderResult(data) && (
               <div
                 key={data?.key}

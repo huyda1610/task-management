@@ -12,7 +12,7 @@ type DrawerContentSearchProps = ShareSearchProps & {
   formSearch: FormInstance<any>;
 };
 
-export default function DrawerContentSearch({ searchItems, values, formSearch }: DrawerContentSearchProps) {
+export default function DrawerContentSearch({ searchItems }: DrawerContentSearchProps) {
   const itemClassName = (className?: string): string => {
     return twMerge("", className);
   };

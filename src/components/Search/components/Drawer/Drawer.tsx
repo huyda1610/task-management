@@ -1,11 +1,11 @@
 import { CloseOutlined, RedoOutlined } from "@ant-design/icons";
+import { ShareSearchItem } from "@components/Search/type";
 import { Badge, Button, Drawer, FormInstance } from "antd";
 import { DrawerPanelProps } from "antd/es/drawer/DrawerPanel";
 import DrawerContentSearch from "./DrawerContent";
-import { B2BSearchItem } from "@core/components/B2BSearch/type";
 
 type DrawerSearchProps = DrawerPanelProps & {
-  searchItems: B2BSearchItem[];
+  searchItems: ShareSearchItem[];
   open: boolean;
   values: any;
   onClear?: () => void;
@@ -29,7 +29,7 @@ export default function DrawerSearch({
       rootStyle={{ background: "none" }}
       title={
         <div className="flex flex-row items-center justify-between">
-          <span className="text-lg font-bold leading-[28px] ">Bộ lọc</span>
+          <span className="text-lg font-bold leading-[28px]">Bộ lọc</span>
 
           <div className="flex flex-row gap-2">
             <Button

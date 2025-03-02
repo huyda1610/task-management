@@ -6,6 +6,9 @@ Dụ án sử dụng để quản lý công việc và xem báo cáo công ty.
 
 1. [Reactjs](https://reactjs.org/).
 2. [Tailwind](https://tailwindcss.com/)
+3. [Redux](https://redux.js.org/)
+4. [Echarts](https://echarts.apache.org/en/index.html)
+5. [Antd](https://ant.design/)
 
 ## 2. Prerequired
 

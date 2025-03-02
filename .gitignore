@@ -24,3 +24,4 @@ yarn.lock
 package-lock.json
 .env.local
 .vscode/launch.json
+tsconfig.app

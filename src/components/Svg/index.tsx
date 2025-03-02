@@ -8,10 +8,14 @@ import { SolarChart2Svg } from "./solar/chart-2";
 import { SolarCheckCircleSvg } from "./solar/check-circle";
 import { SolarClipboardListSvg } from "./solar/clipboard-list";
 import { SolarCloseCircleSvg } from "./solar/close-circle";
+import { SolarCourseDownSvg } from "./solar/course-down";
+import { SolarHandMoneySvg } from "./solar/hand-money";
+import { SolarLayersSvg } from "./solar/layer";
 import { SolarMenuDotsSvg } from "./solar/menu-dot";
 import { SolarPenSvg } from "./solar/pen";
 import { SolarPenNewRoundSvg } from "./solar/pen-new-round";
 import { SolarTrashBinTrashSvg } from "./solar/trash-bin";
+import { SolarUsersGroupRoundedSvg } from "./solar/user-group";
 
 export const ShareIcon = {
   SolarMenuDots: (props: SVGProps<SVGSVGElement>) => <SolarMenuDotsSvg {...props} />,
@@ -27,4 +31,8 @@ export const ShareIcon = {
   SolarPen: (props: SVGProps<SVGSVGElement>) => <SolarPenSvg {...props} />,
   SolarPenNewRound: (props: SVGProps<SVGSVGElement>) => <SolarPenNewRoundSvg {...props} />,
   SolarChart: (props: SVGProps<SVGSVGElement>) => <SolarChartSvg {...props} />,
+  SolarLayer: (props: SVGProps<SVGSVGElement>) => <SolarLayersSvg {...props} />,
+  SolarUsersGroup: (props: SVGProps<SVGSVGElement>) => <SolarUsersGroupRoundedSvg {...props} />,
+  SolarHandMoney: (props: SVGProps<SVGSVGElement>) => <SolarHandMoneySvg {...props} />,
+  SolarCourseDown: (props: SVGProps<SVGSVGElement>) => <SolarCourseDownSvg {...props} />,
 };

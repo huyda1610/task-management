@@ -4,8 +4,7 @@ import { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import { TasksRouter } from "./tasks/index.router";
 
-// const DashboardPage = lazy(() => import("@pages/admin/dashboard"));
-// const TicketCreatePage = lazy(() => import("@pages/admin/ticket/create"));
+const DashboardPage = lazy(() => import("@pages/admin/dashboard"));
 const NotFoundPage = lazy(() => import("@pages/error/404"));
 const ForbiddenPage = lazy(() => import("@pages/error/403"));
 
@@ -16,14 +15,11 @@ export const router = createBrowserRouter(
       element: <AdminLayout />,
       children: [
         ...TasksRouter(),
-        // ...TemplateRouter(),
-        // ...SettingRouter(),
-        // ...AiRouter(),
-        // {
-        //   path: "",
-        //   element: <DashboardPage />,
-        //   index: true,
-        // },
+        {
+          path: "",
+          element: <DashboardPage />,
+          index: true,
+        },
       ],
     },
     {

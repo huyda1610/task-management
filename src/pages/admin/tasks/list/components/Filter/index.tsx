@@ -14,7 +14,7 @@ function TasksFilter() {
       key: "searchKey",
       title: "searchKey",
       type: "input",
-      placeholder: "Tìm kiếm theo tên công việc",
+      placeholder: "Tìm kiếm theo tên công việc hoặc mã",
       className: "sm:w-[500px] w-full",
     },
   ];
@@ -24,10 +24,12 @@ function TasksFilter() {
       searchItems={searchItems}
       totalResult={tasks.data?.totalCount}
       onValuesChange={(allValues) => {
+        console.log(allValues);
+
         dispatch(
           tasksSliceThunk.fetchTasksAsync({
             ...tasks.input,
-            ...allValues,
+            searchKey: allValues?.searchKey ?? "",
             page: DEFAULT_PAGE,
           }),
         );

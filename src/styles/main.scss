@@ -4,26 +4,15 @@
 @use "ultils/typography";
 
 //Page
-// @use "pages/loading-overlay";
-// @use "pages/dashboard";
-// @use "pages/error";
+@use "pages/error";
 
 //Antd
-// @use "antd/carousel";
 @use "antd/modal";
-// @use "antd/menu";
 @use "antd/spin";
-// @use "antd/select";
 @use "antd/table";
-// @use "antd/drawer";
-// @use "antd/card";
-// @use "antd/btn";
 @use "antd/form";
-// @use "antd/tab";
-// @use "antd/breadcurmb";
+@use "antd/breadcurmb";
 @use "antd/tag";
-// @use "antd/step";
-// @use "antd/dropdown";
 
 //Components
 

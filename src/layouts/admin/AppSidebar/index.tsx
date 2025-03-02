@@ -38,7 +38,7 @@ const AppSidebar: React.FC = () => {
               {(isExpanded || isHovered || isMobileOpen) && (
                 <ShareIcon.SolarAltArrowDownLine
                   className={`ml-auto h-5 w-5 transition-transform duration-200 ${
-                    openSubmenu?.type === menuType && openSubmenu?.index === index ? "text-brand-500 rotate-180" : ""
+                    openSubmenu?.type === menuType && openSubmenu?.index === index ? "rotate-180 text-brand-500" : ""
                   }`}
                 />
               )}
@@ -172,25 +172,21 @@ const AppSidebar: React.FC = () => {
 
   return (
     <aside
-      className={`fixed left-0 top-0 z-50 flex h-screen flex-col border-r border-gray-200 bg-white px-5 text-gray-900 transition-all duration-300 ease-in-out lg:mt-0 dark:border-gray-800 dark:bg-gray-900 ${isExpanded || isMobileOpen ? "w-[290px]" : isHovered ? "w-[290px]" : "w-[90px]"} ${isMobileOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0`}
+      className={`fixed left-0 top-0 z-50 flex h-screen flex-col border-r border-gray-200 bg-white px-5 text-gray-900 transition-all duration-300 ease-in-out dark:border-gray-800 dark:bg-gray-900 lg:mt-0 ${isExpanded || isMobileOpen ? "w-[290px]" : isHovered ? "w-[290px]" : "w-[90px]"} ${isMobileOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0`}
       onMouseEnter={() => !isExpanded && setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className={`flex justify-center py-8 ${!isExpanded && !isHovered ? "lg:justify-center" : "justify-start"}`}>
         <Link to="/">
           {isExpanded || isHovered || isMobileOpen ? (
-            <>
-              <img
-                className="dark:hidden"
-                src="https://fpt.vn/assets/imgs/fpt-logo.svg"
-                alt="Logo"
-                width={150}
-                height={40}
-              />
-              <img className="hidden dark:block" src="/imgs/logo/logo-dark.svg" alt="Logo" width={150} height={40} />
-            </>
+            <div className="flex items-center gap-2">
+              <img src="/vite.svg" alt="Logo" width={50} height={40} />
+              <strong className="w-full text-lg">Tasks Management</strong>
+            </div>
           ) : (
-            <img src="https://fpt.vn/assets/imgs/fpt-logo.svg" alt="Logo" width={32} height={32} />
+            <div>
+              <img src="/vite.svg" alt="Logo" width={32} height={32} />
+            </div>
           )}
         </Link>
       </div>
